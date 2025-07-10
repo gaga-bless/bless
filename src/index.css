@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-page;
+}
+
+* {
+  cursor: url('/starter-rainbow-fire-cursor.png') 16 16, auto !important;
+}
+
+button,
+a,
+input,
+[role='button'] {
+  cursor: url('/starter-rainbow-fire-pointer.png') 16 16, pointer !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.wallet-adapter-button-trigger {
+  background: #fac24f!important;
+  color: #2a1810 !important;
+  border: 1px solid #fac24f !important;
+  border-radius: 1rem !important;
+  padding: 0 1.5rem !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(8px);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  height: auto !important;
+  font-size: 1rem !important;
+}
+
+.wallet-adapter-button-trigger:hover {
+  background: #fac24f !important;
+  border-color: #fac24f !important;
+  box-shadow: 0 0 15px #fac24f;
+}
+
+.burnComponent .wallet-adapter-dropdown{
+  display: block !important;
+  width: 100vw !important;
+  padding: 0 2rem !important;
+}
+.burnComponent .wallet-adapter-dropdown .wallet-adapter-button-trigger {
+  width: 100% !important;
+}
+
+.about-bonk-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  background-color: #3e1e46;
+}
+.background-wrapper {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.space-gas-container {
+  position: absolute;
+  inset: 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  will-change: transform;
+  width: 100%;
+  height: 100vh;
+  transform: translate3d(0px, 0px, 0px);
+  z-index: 11;
+  overflow: hidden;
+}
+.space-gas {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 11;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+}
+.space-gas img {
+  object-fit: cover;
+  opacity: 1;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+
+.clouds-back-container {
+  position: absolute;
+  inset: 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  will-change: transform;
+  width: 100%;
+  height: 100vh;
+  transform: translate3d(0px, 0px, 0px);
+  z-index: 13;
+  overflow: hidden;
+}
+.clouds-back {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  top: 0;
+  z-index: 13;
+}
+
+.clouds-back,
+.space-gas img {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+.clouds-back3 {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  z-index: 15;
+}
+.clouds-back img,
+.clouds-back3 {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+
+.clouds-back img,
+.clouds-back3 {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+.clouds-back img {
+  object-fit: cover;
+  opacity: 1;
+}
+.cloud-front-1,
+.clouds-back3 img {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+.clouds-back3 img {
+  opacity: 1;
+}
+
+.space-gas-container-stars {
+  position: absolute;
+  inset: 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  will-change: transform;
+  width: 100%;
+  height: 100vh;
+  transform: translate3d(0px, -628.8px, 0px);
+  z-index: 12;
+  overflow: hidden;
+}
+
+.space-gas-container-stars-2 {
+  position: absolute;
+  inset: 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  will-change: transform;
+  width: 100%;
+  height: 100vh;
+  transform: translate3d(0px, -157.2px, 0px);
+  z-index: 12;
+  overflow: hidden;
+}
+
+.stars,
+.stars img {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+.stars {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 12;
+}
+.stars img {
+  object-fit: cover;
+}
+
+.space-gas-container-cloud-front {
+  position: absolute;
+  inset: 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  will-change: transform;
+  width: 100%;
+  height: 100vh;
+  transform: translate3d(0px, 0px, 0px);
+  z-index: 15;
+  overflow: hidden;
+}
+
+.space-gas-container-ufo {
+  position: absolute;
+  inset: 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  will-change: transform;
+  width: 100%;
+  height: 100vh;
+  transform: translate3d(0px, 0px, 0px);
+  z-index: 14;
+  overflow: hidden;
+}
+.ufo {
+  z-index: 80;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ufo img {
+  position: absolute;
+  /* animation: floatUFO 1s ease-in-out infinite alternate; */
+  top: 5px;
+}
+
+@keyframes floatUFO {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(10px, -15px) rotate(5deg); }
+  50% { transform: translate(-5px, -25px) rotate(-5deg); }
+  75% { transform: translate(-15px, -15px) rotate(2deg); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(-15px, -20px) rotate(-3deg); }
+  50% { transform: translate(10px, -30px) rotate(5deg); }
+  75% { transform: translate(15px, -15px) rotate(-2deg); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(15px, -25px) rotate(3deg); }
+  50% { transform: translate(-10px, -15px) rotate(-4deg); }
+  75% { transform: translate(-5px, -20px) rotate(2deg); }
+}
+
+.cloud-front-1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 15;
+}
+.cloud-front-1,
+.clouds-back3 img {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+
+.cloud-front-1 img {
+  bottom: 0;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  width: 15vw;
+}

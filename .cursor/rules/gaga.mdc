@@ -1,0 +1,61 @@
+---
+description: Solana DApp 项目规则
+globs:
+  - "src/**/*.{ts,tsx}"
+  - "src/**/*.css"
+  - "public/**/*"
+alwaysApply: true
+---
+
+# 项目规范
+
+## 文件组织
+- 组件文件放在 `src/components` 目录下
+- 页面文件放在 `src/pages` 目录下
+- 工具函数放在 `src/utils` 目录下
+- 类型定义放在 `src/types` 目录下
+- 常量配置放在 `src/config` 目录下
+- 静态资源放在 `public` 目录下
+
+## 命名规范
+- 组件文件使用 PascalCase
+- 工具函数文件使用 camelCase
+- CSS 文件与组件同名
+- 常量使用 UPPER_SNAKE_CASE
+- 变量和函数使用 camelCase
+- 类型和接口使用 PascalCase
+
+## 代码风格
+- 使用 TypeScript 严格模式
+- 使用 ESLint + Prettier 进行代码格式化
+- 使用 Tailwind CSS 进行样式开发
+- 组件优先使用函数式组件
+- 使用 ES6+ 语法特性
+
+## Solana 开发规范
+- 使用 @solana/web3.js 进行链交互
+- 使用 @solana/wallet-adapter 进行钱包集成
+- 交易操作需要做好错误处理
+- 余额刷新间隔不少于 2 秒
+- 保持用户友好的错误提示
+
+## 性能优化
+- 使用 React.memo 优化纯展示组件
+- 使用 useMemo 和 useCallback 优化性能
+- 避免不必要的重渲染
+- 图片资源需要优化尺寸和格式
+- 合理使用 Web Worker 处理复杂计算
+
+## 安全规范
+- 禁止在代码中硬编码私钥
+- API Key 等敏感信息使用环境变量
+- 用户输入需要做好验证
+- 使用 HTTPS 进行通信
+- 定期更新依赖包版本
+
+## Git 规范
+- 遵循 Angular Commit Message 规范
+- 重要功能需要写单元测试
+- 提交前进行代码格式化
+- 保持合理的提交粒度
+- 主分支代码必须经过 Code Review
