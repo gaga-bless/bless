@@ -9,20 +9,20 @@ const China = () => {
       <div className="absolute top-[5%] left-[5%] z-20">
         <img src="/fo1.png" alt="GAGA" className="w-12 animate-[float1_8s_ease-in-out_infinite]" />
       </div>
-      <div className="absolute top-[15%] left-[15%] z-20">
+      <div className="absolute top-[15%] left-[15%] z-20 hidden sm:block">
         <img src="/fo1.png" alt="GAGA" className="w-16 animate-[float2_10s_ease-in-out_infinite]" />
       </div>
-      <div className="absolute top-[8%] left-[25%] z-20">
+      <div className="absolute top-[8%] left-[25%] z-20 hidden sm:block">
         <img src="/fo1.png" alt="GAGA" className="w-12 animate-[float3_9s_ease-in-out_infinite]" />
       </div>
 
       <div className="absolute top-[16%] right-[5%] z-20 transform scale-x-[-1]">
         <img src="/fo1.png" alt="GAGA" className="w-12 animate-[float2_8s_ease-in-out_infinite]" />
       </div>
-      <div className="absolute top-[15%] right-[15%] z-20 transform scale-x-[-1]">
+      <div className="absolute top-[15%] right-[15%] z-20 transform scale-x-[-1] hidden sm:block">
         <img src="/fo1.png" alt="GAGA" className="w-16 animate-[float3_10s_ease-in-out_infinite]" />
       </div>
-      <div className="absolute top-[8%] right-[25%] z-20 transform scale-x-[-1]">
+      <div className="absolute top-[8%] right-[25%] z-20 transform scale-x-[-1] hidden sm:block">
         <img src="/fo1.png" alt="GAGA" className="w-12 animate-[float1_9s_ease-in-out_infinite]" />
       </div>
     </>

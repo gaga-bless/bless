@@ -61,10 +61,14 @@ export const BurnToken: FC = () => {
 
   if (!publicKey) {
     return (
-      <div className="w-full sm:w-1/2 md:w-1/3 px-8">
-        <div className="space-y-6 w-full bg-black/50 backdrop-blur-sm rounded-xl p-4">
+      <div className="w-full px-4">
+        <div className="w-full max-w-md bg-black/50 backdrop-blur-sm rounded-xl p-4 mx-auto">
           <div className="text-center">
-            <img src="/logo.png" alt="GAGA" className="w-20 h-20 mx-auto mb-4" />
+            <img
+              src="/logo.png"
+              alt="GAGA"
+              className="w-20 h-20 mx-auto mb-4"
+            />
             {/* <h2 className="text-2xl font-semibold mb-2 bg-golden-gradient text-transparent bg-clip-text">
               Connect your wallet to burn your offerings
             </h2> */}
@@ -78,8 +82,8 @@ export const BurnToken: FC = () => {
   }
 
   return (
-    <div className="w-full sm:w-1/2 md:w-1/3 px-8">
-      <div className="space-y-6 w-full bg-black/50 backdrop-blur-sm rounded-xl p-4">
+    <div className="w-full px-4">
+      <div className="w-full max-w-md bg-black/50 backdrop-blur-sm rounded-xl p-4 mx-auto space-y-6">
         <div className="text-center">
           <img src="/logo.png" alt="GAGA" className="w-20 h-20 mx-auto mb-4" />
           <h2 className="text-2xl font-semibold mb-2 bg-golden-gradient text-transparent bg-clip-text">
