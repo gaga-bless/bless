@@ -6,6 +6,7 @@ import {
   getMint,
   createBurnInstruction,
 } from "@solana/spl-token";
+import { toast } from "react-toastify";
 
 const TOKEN_MINT_ADDRESS = "REPLACE_WITH_GAGA_TOKEN_ADDRESS"; // 👈 Token Mint
 
@@ -49,11 +50,11 @@ export const BurnToken: FC = () => {
       const signature = await sendTransaction(tx, connection);
       await connection.confirmTransaction(signature, "confirmed");
 
-      alert(`🔥 Burned! Transaction hash: ${signature}`);
+      toast.success(`🔥 Burned! Transaction hash: ${signature}`);
       fetchBalance();
     } catch (err) {
       console.error("🔥 Burn failed:", err);
-      alert("Burn failed, please check the console for details.");
+      toast.error("Burn failed, please check the console for details.");
     }
     setLoading(false);
   };

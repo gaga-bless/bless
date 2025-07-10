@@ -2,6 +2,7 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { WalletContextProvider } from "./contexts/WalletContextProvider";
 import { BurnToken } from "./components/BurnToken";
 import Background from "./components/Background";
+import { ToastContainer, Zoom } from "react-toastify";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <BurnToken />
         </div>
       </div>
+      <ToastContainer position="top-center" transition={Zoom} />
     </WalletContextProvider>
   );
 }
