@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { BurnLeaderboard } from "./components/BurnLeaderboard";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import LoadingPage from "./components/LoadingPage";
+
 function App() {
   const [isBurn, setIsBurn] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
