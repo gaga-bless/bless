@@ -104,16 +104,7 @@ export const BurnToken: FC = () => {
               alt="GAGA"
               className="w-20 h-20 mx-auto mb-4"
             />
-            <span className="text-sm text-gothic-gold/60">Token Address</span>
-            <h2 className="text-sm font-semibold mb-2 bg-golden-gradient text-transparent bg-clip-text break-all px-2">
-            {TOKEN_MINT_ADDRESS}
-            </h2>
-            <button
-              onClick={() => copyToClipboard(TOKEN_MINT_ADDRESS)}
-              className="mt-4 px-6 py-1 bg-gothic-dark/30 hover:bg-gothic-dark/50 transition-all duration-300 text-gothic-gold/80 hover:text-gothic-gold border-2 border-gothic-gold/80 rounded-md"
-            >
-              Copy 
-            </button>
+            <div className="text-2xl font-semibold text-gothic-gold">🔥 Start your offering 🔥</div>
           </div>
         </div>
       </div>
